@@ -48,10 +48,11 @@ Images: use [placehold.co](https://placehold.co) or neutral gray blocks until re
 
 ### Step 2 — Hero
 
-- Full-width placeholder hero image + dark overlay
-- Eyebrow, H1, subcopy, 5 feature chips
-- Call Now + WhatsApp buttons
-- “Jai Shri Ram” detail (bottom-right)
+- [x] Full-width hero **slider** (`home1.jpg`–`home3.jpg`) + dark overlay
+- [x] Eyebrow, H1, subcopy, 5 feature chips
+- [x] Call Now + WhatsApp buttons
+- [x] “Jai Shri Ram” detail (bottom-right)
+- [x] Autoplay, dots, prev/next on hover (respects reduced motion)
 
 ### Step 3 — About + stats
 
