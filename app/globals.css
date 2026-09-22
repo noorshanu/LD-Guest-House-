@@ -6,14 +6,29 @@
 }
 
 :root {
-  --color-gold: #c9a227;
-  --color-gold-dark: #9a7b1a;
+  --color-gold: #c59d5f;
+  --color-gold-dark: #a67f42;
   --color-whatsapp: #25d366;
   --color-footer: #2d1b10;
   --color-cream: #faf8f5;
   --color-ink: #2c2419;
   --color-ink-muted: #5c5348;
   --color-border: #e8e2d8;
+  --color-bronze: #6b5344;
+  --color-pale-blue: #eef4f8;
+  --color-muted-panel: #eef1f4;
+}
+
+.section-pad {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .section-pad {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 html {

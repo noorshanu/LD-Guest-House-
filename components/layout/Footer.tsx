@@ -121,7 +121,15 @@ export function Footer() {
                   <FaWhatsapp className="size-5 shrink-0 text-[#25D366]" aria-hidden />
                   WhatsApp Us
                 </a>
-                <p className="text-sm text-[#d1c7bd]/90">{SITE.addressPlaceholder}</p>
+                <p className="text-sm leading-relaxed text-[#d1c7bd]/90">{SITE.address}</p>
+                <a
+                  href={SITE.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block text-sm text-[#d1c7bd] underline-offset-2 hover:text-white hover:underline"
+                >
+                  Open in Google Maps
+                </a>
               </div>
             </div>
 

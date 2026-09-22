@@ -55,7 +55,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="group relative flex min-h-[32rem] items-end overflow-hidden md:min-h-[85vh] md:items-center"
+      className="group relative flex min-h-[36rem] items-end overflow-hidden md:min-h-[88vh]"
       aria-roledescription="carousel"
       aria-label="Hero image slider"
     >
@@ -79,33 +79,38 @@ export function Hero() {
           </div>
         ))}
         <div
-          className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/25"
+          className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/15"
           aria-hidden
         />
-        <div className="absolute inset-0 bg-black/20" aria-hidden />
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"
+          aria-hidden
+        />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-10 pt-28 lg:px-8 lg:pb-14 lg:pt-32">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-gold)] sm:text-sm">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 pt-28 lg:px-8 lg:pb-20 lg:pt-36">
+        <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-white/95 sm:text-xs">
           A comfortable stay in the holy city
         </p>
-        <h1 className="mt-3 max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+        <h1 className="mt-4 max-w-3xl font-serif text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-[3.35rem]">
           LD Guest House, Ayodhya
         </h1>
         <p className="mt-4 max-w-xl text-base text-white/90 sm:text-lg">
           A peaceful stay for families, pilgrims, tourists and groups
         </p>
 
-        <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-4 sm:gap-x-8">
+        <ul className="mt-8 flex max-w-3xl flex-wrap gap-x-6 gap-y-5 sm:gap-x-8 lg:gap-x-10">
           {HERO_FEATURES.map((feature) => {
             const Icon = featureIcons[feature.icon];
             return (
               <li
                 key={feature.label}
-                className="flex items-center gap-2 text-sm font-medium text-white/95"
+                className="flex w-[5.5rem] flex-col items-center text-center sm:w-auto sm:min-w-[6.5rem]"
               >
-                <Icon className="size-4 shrink-0 text-[var(--color-gold)]" aria-hidden />
-                {feature.label}
+                <Icon className="size-6 shrink-0 text-[var(--color-gold)] sm:size-7" aria-hidden />
+                <span className="mt-2 text-[11px] font-medium leading-snug text-white sm:text-xs">
+                  {feature.label}
+                </span>
               </li>
             );
           })}
@@ -114,7 +119,7 @@ export function Hero() {
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
             href={SITE.phoneHref}
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--color-gold)] px-5 py-3 text-sm font-bold text-white transition hover:bg-[var(--color-gold-dark)]"
+            className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--color-gold)] px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-[var(--color-gold-dark)]"
           >
             <FaPhoneAlt className="size-4" aria-hidden />
             Call Now
@@ -123,7 +128,7 @@ export function Hero() {
             href={SITE.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--color-whatsapp)] px-5 py-3 text-sm font-bold text-white transition hover:brightness-110"
+            className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--color-whatsapp)] px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:brightness-110"
           >
             <FaWhatsapp className="size-5" aria-hidden />
             WhatsApp Us
@@ -131,7 +136,7 @@ export function Hero() {
         </div>
       </div>
 
-      <p className="pointer-events-none absolute bottom-4 right-4 z-10 flex items-center gap-2 text-sm font-medium text-white/90 lg:bottom-8 lg:right-8">
+      <p className="pointer-events-none absolute bottom-5 right-4 z-10 flex items-center gap-2 font-serif text-base italic text-white/95 lg:bottom-8 lg:right-8 lg:text-lg">
         <span aria-hidden>🚩</span>
         Jai Shri Ram
       </p>
@@ -155,16 +160,16 @@ export function Hero() {
             <FaChevronRight className="size-4" />
           </button>
 
-          <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 gap-2 lg:bottom-8">
+          <div className="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-2 lg:bottom-7">
             {HERO_SLIDES.map((slide, index) => (
               <button
                 key={slide.src}
                 type="button"
                 onClick={() => goTo(index)}
-                className={`size-2.5 rounded-full transition ${
+                className={`size-2 rounded-full transition ${
                   index === activeIndex
                     ? "scale-110 bg-[var(--color-gold)]"
-                    : "bg-white/50 hover:bg-white/80"
+                    : "bg-white/45 hover:bg-white/75"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
                 aria-current={index === activeIndex}

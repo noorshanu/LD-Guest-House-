@@ -56,20 +56,21 @@ Images: use [placehold.co](https://placehold.co) or neutral gray blocks until re
 
 ### Step 3 — About + stats
 
-- Two-column copy + placeholder image
-- Stat row (rooms, capacity, etc.)
+- [x] Two-column copy + property image
+- [x] Highlight cards (rooms, parking, families, location)
 
 ### Step 4 — Rooms carousel/cards
 
-- Placeholder room cards, pricing line, CTAs
+- [x] Four room cards using `public/rooms/` photos, CTAs
 
 ### Step 5 — Gallery grid
 
-- Placeholder grid, lightbox optional later
+- [x] Masonry-style grid from `public/rooms/` images
 
 ### Step 6 — Amenities + Location + Contact
 
-- Icon grid, map placeholder, contact form (static UI first)
+- [x] Icon grid, map placeholder, contact form (static UI)
+- [x] Also: Features bar, Banquet, Travel services, Testimonials
 
 ### Step 7 — Polish
 

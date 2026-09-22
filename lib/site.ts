@@ -4,7 +4,14 @@ export const SITE = {
   phone: "9936242959",
   phoneHref: "tel:+919936242959",
   whatsappHref: "https://wa.me/919936242959",
-  addressPlaceholder: "(Address will be added here)",
+  address:
+    "Ramlila Maidan, Chowk, Taksal Rd, Shakti Vihar Colony, Faizabad, Uttar Pradesh 224001",
+  mapsUrl: "https://maps.app.goo.gl/gNKzJcjbmQFDovwx5",
+  mapsEmbedSrc:
+    "https://www.google.com/maps?q=Ramlila+Maidan,+Chowk,+Taksal+Rd,+Shakti+Vihar+Colony,+Faizabad,+Uttar+Pradesh+224001&hl=en&z=16&output=embed",
+  /** Hotel intro — https://youtu.be/OYBt7U8GPfk */
+  introVideoId: "OYBt7U8GPfk",
+  introVideoUrl: "https://youtu.be/OYBt7U8GPfk",
 } as const;
 
 export const NAV_LINKS = [
